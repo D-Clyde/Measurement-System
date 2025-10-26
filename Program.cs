@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.Logging;
+
 namespace Measurement_System
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Measurement_System
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Add_client());
+            Application.Run(new Form1());
         }
     }
 }

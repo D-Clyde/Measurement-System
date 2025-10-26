@@ -36,16 +36,16 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            ForgotPass = new Label();
+            Login = new Button();
             panel4 = new Panel();
+            Passbx = new TextBox();
             pictureBox3 = new PictureBox();
             panel3 = new Panel();
+            Userbx = new TextBox();
             pictureBox2 = new PictureBox();
             label5 = new Label();
             Exit = new Button();
-            Passbx = new TextBox();
-            Userbx = new TextBox();
-            Login = new Button();
-            ForgotPass = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -88,7 +88,6 @@
             label3.Size = new Size(83, 25);
             label3.TabIndex = 3;
             label3.Text = "System";
-            label3.Click += label3_Click;
             // 
             // label1
             // 
@@ -99,7 +98,6 @@
             label1.Size = new Size(152, 25);
             label1.TabIndex = 2;
             label1.Text = "Measurement";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -135,6 +133,25 @@
             panel2.Size = new Size(450, 530);
             panel2.TabIndex = 1;
             // 
+            // ForgotPass
+            // 
+            ForgotPass.AutoSize = true;
+            ForgotPass.Cursor = Cursors.Hand;
+            ForgotPass.Location = new Point(112, 326);
+            ForgotPass.Name = "ForgotPass";
+            ForgotPass.Size = new Size(100, 15);
+            ForgotPass.TabIndex = 5;
+            ForgotPass.Text = "Forgot Password?";
+            // 
+            // Login
+            // 
+            Login.Location = new Point(7, 318);
+            Login.Name = "Login";
+            Login.Size = new Size(99, 31);
+            Login.TabIndex = 4;
+            Login.Text = "Login";
+            Login.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             panel4.BackColor = Color.White;
@@ -144,6 +161,14 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(450, 40);
             panel4.TabIndex = 3;
+            // 
+            // Passbx
+            // 
+            Passbx.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Passbx.Location = new Point(55, 6);
+            Passbx.Name = "Passbx";
+            Passbx.Size = new Size(372, 29);
+            Passbx.TabIndex = 2;
             // 
             // pictureBox3
             // 
@@ -164,6 +189,14 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(450, 40);
             panel3.TabIndex = 3;
+            // 
+            // Userbx
+            // 
+            Userbx.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Userbx.Location = new Point(55, 6);
+            Userbx.Name = "Userbx";
+            Userbx.Size = new Size(372, 29);
+            Userbx.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -201,41 +234,6 @@
             Exit.TextAlign = ContentAlignment.MiddleRight;
             Exit.UseVisualStyleBackColor = true;
             Exit.Click += Exit_Click;
-            // 
-            // Passbx
-            // 
-            Passbx.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Passbx.Location = new Point(55, 6);
-            Passbx.Name = "Passbx";
-            Passbx.Size = new Size(372, 29);
-            Passbx.TabIndex = 2;
-            // 
-            // Userbx
-            // 
-            Userbx.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Userbx.Location = new Point(55, 6);
-            Userbx.Name = "Userbx";
-            Userbx.Size = new Size(372, 29);
-            Userbx.TabIndex = 2;
-            // 
-            // Login
-            // 
-            Login.Location = new Point(7, 318);
-            Login.Name = "Login";
-            Login.Size = new Size(99, 31);
-            Login.TabIndex = 4;
-            Login.Text = "Login";
-            Login.UseVisualStyleBackColor = true;
-            // 
-            // ForgotPass
-            // 
-            ForgotPass.AutoSize = true;
-            ForgotPass.Cursor = Cursors.Hand;
-            ForgotPass.Location = new Point(112, 326);
-            ForgotPass.Name = "ForgotPass";
-            ForgotPass.Size = new Size(100, 15);
-            ForgotPass.TabIndex = 5;
-            ForgotPass.Text = "Forgot Password?";
             // 
             // Form1
             // 

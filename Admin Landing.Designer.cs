@@ -28,91 +28,187 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            button1 = new Button();
+            splitter1 = new Splitter();
+            Adminlbl = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             button2 = new Button();
-            panel1.SuspendLayout();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            MainPanel = new Panel();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // splitter1
             // 
-            panel1.BackColor = Color.Lime;
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1048, 93);
-            panel1.TabIndex = 0;
+            splitter1.BackColor = Color.OliveDrab;
+            splitter1.Location = new Point(0, 0);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new Size(323, 775);
+            splitter1.TabIndex = 0;
+            splitter1.TabStop = false;
             // 
-            // label1
+            // Adminlbl
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(235, 49);
-            label1.TabIndex = 1;
-            label1.Text = "Welcome,";
+            Adminlbl.AutoSize = true;
+            Adminlbl.BackColor = Color.OliveDrab;
+            Adminlbl.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Adminlbl.Location = new Point(105, 106);
+            Adminlbl.Name = "Adminlbl";
+            Adminlbl.Size = new Size(89, 28);
+            Adminlbl.TabIndex = 1;
+            Adminlbl.Text = "Admin";
             // 
-            // label2
+            // pictureBox1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(238, 24);
-            label2.Name = "label2";
-            label2.Size = new Size(158, 49);
-            label2.TabIndex = 2;
-            label2.Text = "Admin";
+            pictureBox1.Location = new Point(21, 211);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(36, 36);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
-            // button1
+            // pictureBox2
             // 
-            button1.BackColor = Color.Lime;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Red;
-            button1.Location = new Point(940, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(96, 37);
-            button1.TabIndex = 3;
-            button1.Text = "Log Out";
-            button1.UseVisualStyleBackColor = false;
+            pictureBox2.Location = new Point(21, 288);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(36, 36);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Location = new Point(21, 365);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(36, 36);
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(21, 442);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(36, 36);
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
             // 
             // button2
             // 
-            button2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(784, 33);
+            button2.BackColor = Color.OliveDrab;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 14.25F);
+            button2.Location = new Point(0, 191);
             button2.Name = "button2";
-            button2.Size = new Size(137, 33);
+            button2.Size = new Size(323, 73);
             button2.TabIndex = 4;
-            button2.Text = "ADD CLIENT";
-            button2.UseVisualStyleBackColor = true;
+            button2.Text = "Dashboard";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.OliveDrab;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Century Gothic", 14.25F);
+            button3.Location = new Point(0, 269);
+            button3.Name = "button3";
+            button3.Size = new Size(323, 73);
+            button3.TabIndex = 4;
+            button3.Text = "Clients";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.OliveDrab;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Century Gothic", 14.25F);
+            button4.Location = new Point(0, 348);
+            button4.Name = "button4";
+            button4.Size = new Size(323, 73);
+            button4.TabIndex = 4;
+            button4.Text = "Transactions";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.OliveDrab;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Century Gothic", 14.25F);
+            button5.Location = new Point(0, 427);
+            button5.Name = "button5";
+            button5.Size = new Size(323, 73);
+            button5.TabIndex = 4;
+            button5.Text = "Staff";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // MainPanel
+            // 
+            MainPanel.Location = new Point(322, 0);
+            MainPanel.Name = "MainPanel";
+            MainPanel.Size = new Size(964, 783);
+            MainPanel.TabIndex = 6;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Sign out";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Admin_Landing
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1048, 709);
-            Controls.Add(panel1);
+            ClientSize = new Size(1285, 775);
+            Controls.Add(button1);
+            Controls.Add(MainPanel);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(Adminlbl);
+            Controls.Add(splitter1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Admin_Landing";
             Text = "Admin_Landing";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Panel panel1;
-        private Label label1;
-        private Label label2;
-        private Button button1;
+        private Splitter splitter1;
+        private Label Adminlbl;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
         private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Panel MainPanel;
+        private Button button1;
     }
 }

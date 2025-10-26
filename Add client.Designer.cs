@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            Exit = new Button();
             label31 = new Label();
             label30 = new Label();
             label29 = new Label();
@@ -44,35 +45,35 @@
             label19 = new Label();
             label18 = new Label();
             Add = new Button();
-            seamcircumference = new TextBox();
+            seam_circumference = new TextBox();
             label15 = new Label();
-            kneecircumference = new TextBox();
+            knee_circumference = new TextBox();
             label14 = new Label();
-            thighcircumference = new TextBox();
+            thigh_circumference = new TextBox();
             label13 = new Label();
-            waistlinecircumference = new TextBox();
+            waist_line_circumference = new TextBox();
             label12 = new Label();
-            leglength = new TextBox();
+            leg_length = new TextBox();
             label11 = new Label();
-            crotchlength = new TextBox();
+            crotch_length = new TextBox();
             label10 = new Label();
-            neckcircumference = new TextBox();
+            neck_circumference = new TextBox();
             label9 = new Label();
-            hipcircumference = new TextBox();
+            hips_circumference = new TextBox();
             label8 = new Label();
-            abdomencircumference = new TextBox();
+            abdomen_circumference = new TextBox();
             label7 = new Label();
-            chestcircumference = new TextBox();
+            chest_circumference = new TextBox();
             label6 = new Label();
-            cuffscircumference = new TextBox();
+            cuffs_circumference = new TextBox();
             label5 = new Label();
-            sleevelength = new TextBox();
+            sleeve_length = new TextBox();
             label4 = new Label();
-            shoulderlength = new TextBox();
+            shoulder_width = new TextBox();
             label3 = new Label();
-            backlength = new TextBox();
+            back_length = new TextBox();
             label2 = new Label();
-            clientname = new TextBox();
+            client_name = new TextBox();
             label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -81,6 +82,8 @@
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(Exit);
             panel1.Controls.Add(label31);
             panel1.Controls.Add(label30);
             panel1.Controls.Add(label29);
@@ -96,41 +99,51 @@
             panel1.Controls.Add(label19);
             panel1.Controls.Add(label18);
             panel1.Controls.Add(Add);
-            panel1.Controls.Add(seamcircumference);
+            panel1.Controls.Add(seam_circumference);
             panel1.Controls.Add(label15);
-            panel1.Controls.Add(kneecircumference);
+            panel1.Controls.Add(knee_circumference);
             panel1.Controls.Add(label14);
-            panel1.Controls.Add(thighcircumference);
+            panel1.Controls.Add(thigh_circumference);
             panel1.Controls.Add(label13);
-            panel1.Controls.Add(waistlinecircumference);
+            panel1.Controls.Add(waist_line_circumference);
             panel1.Controls.Add(label12);
-            panel1.Controls.Add(leglength);
+            panel1.Controls.Add(leg_length);
             panel1.Controls.Add(label11);
-            panel1.Controls.Add(crotchlength);
+            panel1.Controls.Add(crotch_length);
             panel1.Controls.Add(label10);
-            panel1.Controls.Add(neckcircumference);
+            panel1.Controls.Add(neck_circumference);
             panel1.Controls.Add(label9);
-            panel1.Controls.Add(hipcircumference);
+            panel1.Controls.Add(hips_circumference);
             panel1.Controls.Add(label8);
-            panel1.Controls.Add(abdomencircumference);
+            panel1.Controls.Add(abdomen_circumference);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(chestcircumference);
+            panel1.Controls.Add(chest_circumference);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(cuffscircumference);
+            panel1.Controls.Add(cuffs_circumference);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(sleevelength);
+            panel1.Controls.Add(sleeve_length);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(shoulderlength);
+            panel1.Controls.Add(shoulder_width);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(backlength);
+            panel1.Controls.Add(back_length);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(clientname);
+            panel1.Controls.Add(client_name);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(680, 462);
             panel1.TabIndex = 0;
+            // 
+            // Exit
+            // 
+            Exit.Location = new Point(13, 13);
+            Exit.Name = "Exit";
+            Exit.Size = new Size(101, 39);
+            Exit.TabIndex = 45;
+            Exit.Text = "Exit";
+            Exit.UseVisualStyleBackColor = true;
+            Exit.Click += Exit_Click;
             // 
             // label31
             // 
@@ -281,14 +294,15 @@
             Add.TabIndex = 30;
             Add.Text = "Add";
             Add.UseVisualStyleBackColor = true;
+            Add.Click += Add_Click;
             // 
-            // seamcircumference
+            // seam_circumference
             // 
-            seamcircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            seamcircumference.Location = new Point(289, 577);
-            seamcircumference.Name = "seamcircumference";
-            seamcircumference.Size = new Size(220, 31);
-            seamcircumference.TabIndex = 29;
+            seam_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            seam_circumference.Location = new Point(289, 577);
+            seam_circumference.Name = "seam_circumference";
+            seam_circumference.Size = new Size(220, 31);
+            seam_circumference.TabIndex = 29;
             // 
             // label15
             // 
@@ -302,13 +316,13 @@
             label15.TabIndex = 28;
             label15.Text = "Seam Circumference";
             // 
-            // kneecircumference
+            // knee_circumference
             // 
-            kneecircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            kneecircumference.Location = new Point(289, 540);
-            kneecircumference.Name = "kneecircumference";
-            kneecircumference.Size = new Size(220, 31);
-            kneecircumference.TabIndex = 27;
+            knee_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            knee_circumference.Location = new Point(289, 540);
+            knee_circumference.Name = "knee_circumference";
+            knee_circumference.Size = new Size(220, 31);
+            knee_circumference.TabIndex = 27;
             // 
             // label14
             // 
@@ -322,13 +336,13 @@
             label14.TabIndex = 26;
             label14.Text = "Knee Circumference";
             // 
-            // thighcircumference
+            // thigh_circumference
             // 
-            thighcircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            thighcircumference.Location = new Point(289, 504);
-            thighcircumference.Name = "thighcircumference";
-            thighcircumference.Size = new Size(220, 31);
-            thighcircumference.TabIndex = 25;
+            thigh_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            thigh_circumference.Location = new Point(289, 504);
+            thigh_circumference.Name = "thigh_circumference";
+            thigh_circumference.Size = new Size(220, 31);
+            thigh_circumference.TabIndex = 25;
             // 
             // label13
             // 
@@ -342,13 +356,13 @@
             label13.TabIndex = 24;
             label13.Text = "Thigh Circumference";
             // 
-            // waistlinecircumference
+            // waist_line_circumference
             // 
-            waistlinecircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            waistlinecircumference.Location = new Point(289, 467);
-            waistlinecircumference.Name = "waistlinecircumference";
-            waistlinecircumference.Size = new Size(220, 31);
-            waistlinecircumference.TabIndex = 23;
+            waist_line_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            waist_line_circumference.Location = new Point(289, 467);
+            waist_line_circumference.Name = "waist_line_circumference";
+            waist_line_circumference.Size = new Size(220, 31);
+            waist_line_circumference.TabIndex = 23;
             // 
             // label12
             // 
@@ -362,13 +376,13 @@
             label12.TabIndex = 22;
             label12.Text = "Waist Line Circumference";
             // 
-            // leglength
+            // leg_length
             // 
-            leglength.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            leglength.Location = new Point(289, 430);
-            leglength.Name = "leglength";
-            leglength.Size = new Size(220, 31);
-            leglength.TabIndex = 21;
+            leg_length.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            leg_length.Location = new Point(289, 430);
+            leg_length.Name = "leg_length";
+            leg_length.Size = new Size(220, 31);
+            leg_length.TabIndex = 21;
             // 
             // label11
             // 
@@ -382,13 +396,13 @@
             label11.TabIndex = 20;
             label11.Text = "Leg Length";
             // 
-            // crotchlength
+            // crotch_length
             // 
-            crotchlength.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            crotchlength.Location = new Point(289, 393);
-            crotchlength.Name = "crotchlength";
-            crotchlength.Size = new Size(220, 31);
-            crotchlength.TabIndex = 19;
+            crotch_length.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            crotch_length.Location = new Point(289, 393);
+            crotch_length.Name = "crotch_length";
+            crotch_length.Size = new Size(220, 31);
+            crotch_length.TabIndex = 19;
             // 
             // label10
             // 
@@ -402,13 +416,13 @@
             label10.TabIndex = 18;
             label10.Text = "Crotch Length";
             // 
-            // neckcircumference
+            // neck_circumference
             // 
-            neckcircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            neckcircumference.Location = new Point(289, 356);
-            neckcircumference.Name = "neckcircumference";
-            neckcircumference.Size = new Size(220, 31);
-            neckcircumference.TabIndex = 17;
+            neck_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            neck_circumference.Location = new Point(289, 356);
+            neck_circumference.Name = "neck_circumference";
+            neck_circumference.Size = new Size(220, 31);
+            neck_circumference.TabIndex = 17;
             // 
             // label9
             // 
@@ -422,13 +436,13 @@
             label9.TabIndex = 16;
             label9.Text = "Neck Circumference";
             // 
-            // hipcircumference
+            // hips_circumference
             // 
-            hipcircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hipcircumference.Location = new Point(289, 319);
-            hipcircumference.Name = "hipcircumference";
-            hipcircumference.Size = new Size(220, 31);
-            hipcircumference.TabIndex = 15;
+            hips_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hips_circumference.Location = new Point(289, 319);
+            hips_circumference.Name = "hips_circumference";
+            hips_circumference.Size = new Size(220, 31);
+            hips_circumference.TabIndex = 15;
             // 
             // label8
             // 
@@ -443,13 +457,13 @@
             label8.Text = "Hips Circumference";
             label8.Click += label8_Click;
             // 
-            // abdomencircumference
+            // abdomen_circumference
             // 
-            abdomencircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            abdomencircumference.Location = new Point(289, 282);
-            abdomencircumference.Name = "abdomencircumference";
-            abdomencircumference.Size = new Size(220, 31);
-            abdomencircumference.TabIndex = 13;
+            abdomen_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            abdomen_circumference.Location = new Point(289, 282);
+            abdomen_circumference.Name = "abdomen_circumference";
+            abdomen_circumference.Size = new Size(220, 31);
+            abdomen_circumference.TabIndex = 13;
             // 
             // label7
             // 
@@ -463,13 +477,13 @@
             label7.TabIndex = 12;
             label7.Text = "Abdomen Circumference";
             // 
-            // chestcircumference
+            // chest_circumference
             // 
-            chestcircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chestcircumference.Location = new Point(289, 245);
-            chestcircumference.Name = "chestcircumference";
-            chestcircumference.Size = new Size(220, 31);
-            chestcircumference.TabIndex = 11;
+            chest_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chest_circumference.Location = new Point(289, 245);
+            chest_circumference.Name = "chest_circumference";
+            chest_circumference.Size = new Size(220, 31);
+            chest_circumference.TabIndex = 11;
             // 
             // label6
             // 
@@ -483,13 +497,13 @@
             label6.TabIndex = 10;
             label6.Text = "Chest Circumference";
             // 
-            // cuffscircumference
+            // cuffs_circumference
             // 
-            cuffscircumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cuffscircumference.Location = new Point(289, 208);
-            cuffscircumference.Name = "cuffscircumference";
-            cuffscircumference.Size = new Size(220, 31);
-            cuffscircumference.TabIndex = 9;
+            cuffs_circumference.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuffs_circumference.Location = new Point(289, 208);
+            cuffs_circumference.Name = "cuffs_circumference";
+            cuffs_circumference.Size = new Size(220, 31);
+            cuffs_circumference.TabIndex = 9;
             // 
             // label5
             // 
@@ -503,13 +517,13 @@
             label5.TabIndex = 8;
             label5.Text = "Cuffs Circumference";
             // 
-            // sleevelength
+            // sleeve_length
             // 
-            sleevelength.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            sleevelength.Location = new Point(289, 171);
-            sleevelength.Name = "sleevelength";
-            sleevelength.Size = new Size(220, 31);
-            sleevelength.TabIndex = 7;
+            sleeve_length.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sleeve_length.Location = new Point(289, 171);
+            sleeve_length.Name = "sleeve_length";
+            sleeve_length.Size = new Size(220, 31);
+            sleeve_length.TabIndex = 7;
             // 
             // label4
             // 
@@ -523,13 +537,13 @@
             label4.TabIndex = 6;
             label4.Text = "Sleeve Length";
             // 
-            // shoulderlength
+            // shoulder_width
             // 
-            shoulderlength.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            shoulderlength.Location = new Point(289, 134);
-            shoulderlength.Name = "shoulderlength";
-            shoulderlength.Size = new Size(220, 31);
-            shoulderlength.TabIndex = 5;
+            shoulder_width.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            shoulder_width.Location = new Point(289, 134);
+            shoulder_width.Name = "shoulder_width";
+            shoulder_width.Size = new Size(220, 31);
+            shoulder_width.TabIndex = 5;
             // 
             // label3
             // 
@@ -543,13 +557,13 @@
             label3.TabIndex = 4;
             label3.Text = "Shoulder Width";
             // 
-            // backlength
+            // back_length
             // 
-            backlength.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backlength.Location = new Point(289, 97);
-            backlength.Name = "backlength";
-            backlength.Size = new Size(220, 31);
-            backlength.TabIndex = 3;
+            back_length.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            back_length.Location = new Point(289, 97);
+            back_length.Name = "back_length";
+            back_length.Size = new Size(220, 31);
+            back_length.TabIndex = 3;
             // 
             // label2
             // 
@@ -563,13 +577,13 @@
             label2.TabIndex = 2;
             label2.Text = "Back Length";
             // 
-            // clientname
+            // client_name
             // 
-            clientname.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            clientname.Location = new Point(289, 60);
-            clientname.Name = "clientname";
-            clientname.Size = new Size(220, 31);
-            clientname.TabIndex = 1;
+            client_name.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            client_name.Location = new Point(289, 60);
+            client_name.Name = "client_name";
+            client_name.Size = new Size(220, 31);
+            client_name.TabIndex = 1;
             // 
             // label1
             // 
@@ -589,7 +603,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(680, 462);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            HelpButton = true;
             Name = "Add_client";
             Text = "Add_client";
             panel1.ResumeLayout(false);
@@ -601,34 +616,34 @@
 
         private Panel panel1;
         private Label label1;
-        private TextBox kneecircumference;
+        private TextBox knee_circumference;
         private Label label14;
-        private TextBox thighcircumference;
+        private TextBox thigh_circumference;
         private Label label13;
-        private TextBox waistlinecircumference;
+        private TextBox waist_line_circumference;
         private Label label12;
-        private TextBox leglength;
+        private TextBox leg_length;
         private Label label11;
-        private TextBox crotchlength;
+        private TextBox crotch_length;
         private Label label10;
-        private TextBox neckcircumference;
+        private TextBox neck_circumference;
         private Label label9;
-        private TextBox hipcircumference;
+        private TextBox hips_circumference;
         private Label label8;
-        private TextBox abdomencircumference;
+        private TextBox abdomen_circumference;
         private Label label7;
-        private TextBox chestcircumference;
+        private TextBox chest_circumference;
         private Label label6;
-        private TextBox cuffscircumference;
+        private TextBox cuffs_circumference;
         private Label label5;
-        private TextBox sleevelength;
+        private TextBox sleeve_length;
         private Label label4;
-        private TextBox shoulderlength;
+        private TextBox shoulder_width;
         private Label label3;
-        private TextBox backlength;
+        private TextBox back_length;
         private Label label2;
-        private TextBox clientname;
-        private TextBox seamcircumference;
+        private TextBox client_name;
+        private TextBox seam_circumference;
         private Label label15;
         private Button Add;
         private Label label17;
@@ -646,5 +661,6 @@
         private Label label22;
         private Label label21;
         private Label label20;
+        private Button Exit;
     }
 }
